@@ -10,10 +10,15 @@ body {
     font-size: 24pt;
     font-weight: bold;
     background-color: #0BADA6;
+    border-radius: 15px;
     color: white;
-    padding: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 15px 40px 15px 40px;
+    margin: -10px 0px -8px 75px;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #0BADA6;
+    background-color: #F7F7F7;
 }
 
 .navbar-custom .navbar-nav .dropdown:focus,
@@ -25,9 +30,18 @@ body {
 
 .navbar-custom .navbar-nav .nav-item {
     font-size: 16pt;
-    margin-left: 20px;
+    margin-left: 25px;
+    padding: 0px 10px 0px 10px;
 }
 
 .navbar-custom .navbar-nav .nav-item:hover {
     background-color: #F7F7F7;
+    border-radius: 15px;
+}
+
+.navbar-custom .navbar-toggler:focus,
+.navbar-custom .navbar-toggler:hover,
+.navbar-custom .navbar-toggler:active {
+    background-color: #F7F7F7;
+    outline: none;
 }
