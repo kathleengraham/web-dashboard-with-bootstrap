@@ -1,5 +1,10 @@
 body {
     background-color:#F7F7F7;
+    margin-top: 100px;
+}
+
+.container-fluid {
+    margin: auto;
 }
 
 .navbar-custom {
@@ -7,12 +12,12 @@ body {
 }
 
 .navbar-custom .navbar-brand {
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: bold;
     background-color: #0BADA6;
     border-radius: 15px;
     color: white;
-    padding: 15px 40px 15px 40px;
+    padding: 10px 35px 10px 35px;
     margin: -10px 0px -8px 75px;
 }
 
@@ -27,9 +32,13 @@ body {
     background-color: #F7F7F7;
 }
 
-
+.navbar-custom .dropdown-menu,
+.navbar-custom .dropdown-item,
+.navbar-custom .navbar-nav {
+    border-radius: 15px;
+}
 .navbar-custom .navbar-nav .nav-item {
-    font-size: 16pt;
+    font-size: 14pt;
     margin-left: 25px;
     padding: 0px 10px 0px 10px;
 }
@@ -44,4 +53,33 @@ body {
 .navbar-custom .navbar-toggler:active {
     background-color: #F7F7F7;
     outline: none;
+}
+
+@media (max-width: 900px) {
+    .navbar-custom {
+        background-color: #0BADA6;
+    }
+
+    .navbar-custom .navbar-nav {
+        background-color:white;
+    }
+
+    .navbar-custom .navbar-brand {
+        background-color:white;
+        color: #0BADA6;
+    }
+}
+  
+h3 {
+    color: #0BADA6;
+    font-weight: bold;
+}
+
+.summary {
+    background-color:white;
+    text-align: center;
+}
+
+.visualizations {
+    background-color:white;
 }

@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
-  <title>Weather Dashboard: Data</title>
+  <title>Weather Dashboard</title>
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
   <a class="navbar-brand" href="index.html">Latitude</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -43,14 +43,65 @@
   </div>
 </nav>
 
-<div>
-  <h1> This is my test data page.</h1>
+<div class="container-fluid">
+
+  <!-- One big row with two columns inside container-->
+  <div class= "row">
+    
+    <!-- COLUMN 1 (takes up 7 of 12) -->
+    <div class="col-lg-6 offset-lg-1 summary">
+
+      <!-- ROW 1 -->
+      <div class="row">
+        <h3 class="text-center">Summary: Latitude vs. X</h3>
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="row">
+        <p>
+          <img src="#" alt="no image yet">Wrap text in paragraph here.
+        </p>
+      </div>
+
+    </div>
+
+    <!--  COLUMN 2 (takes up 3 of 12) -->
+    <div class="col-lg-4 offset-lg-1 visualizations">
+
+      <!-- ROW 1 -->
+      <div class="row">
+        <h3 class="text-center">Visualizations</h3>
+      </div>
+      
+      <!-- ROW 2 -->
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="">visualization 1
+        </div>
+        <div class="col-lg-6">
+          <img src="">visualization 2
+        </div>
+      </div>
+
+      <!-- ROW 3 -->
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="">visualization 3
+        </div>
+        <div class="col-lg-6">
+          <img src="">visualization 4
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </div>
 
 </body>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- This is the only way I could get the navbar dropdown menu to appear and function correctly-->
+<!--jQuery first, popper second, and bootstrap third -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
