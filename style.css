@@ -58,7 +58,7 @@ body {
     outline: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .navbar-custom {
         background-color: #B37CD1;
     }
@@ -71,13 +71,17 @@ body {
         background-color:white;
         color: #B37CD1;
     }
+
+    .summary, .visualizations {
+        margin-left: 0px;
+    }
 }
 
 .container-fluid {
     margin: auto;
 }
 
-h3 {
+h3, h4 {
     color: #B37CD1;
     font-weight: bold;
 }
@@ -95,6 +99,10 @@ h3 {
     padding: 25px 50px 25px 50px;
 }
 
-.img-row {
-    margin-top: 50px;
+.single-post-content-wrapper{
+    font-size: 16pt;
+}
+
+.viz {
+    margin: 35px -15px 0px 0px;
 }

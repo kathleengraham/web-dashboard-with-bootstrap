@@ -49,7 +49,7 @@
   <div class= "row">
     
     <!-- COLUMN 1 (takes up 7 of 12) -->
-    <div class="col-lg-7 summary">
+    <div class="col-lg-7 col-md-12 summary">
 
       <!-- ROW 1 -->
       <div class="row">
@@ -58,9 +58,9 @@
 
       <!-- ROW 2 -->
       <div class="row">
-        <p class="text-justify">
-          <img class="img-fluid" src="../images/lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">The purpose of this project was to analyze how weather changes as you get closer to the equator.
-          To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.<br>
+        <p class="single-post-content-wrapper">
+          <img class="img-fluid image-wrapper float-left" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">The purpose of this project was to analyze how weather changes as you get closer to the equator.
+          To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.<br><br>
           After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
           temperature, humidity, cloudiness, and windpseed. This site provides the source data and visualizations created as part of the 
           analysis, as well as explanations and descriptions of any trends and correlations witnessed.
@@ -70,30 +70,26 @@
     </div>
 
     <!--  COLUMN 2 (takes up 3 of 12) -->
-    <div class="col-lg-4 visualizations">
+    <div class="col-lg-4 col-md-12 visualizations">
 
       <!-- ROW 1 -->
-      <div class="row">
-        <h3>Visualizations</h3>
+      <div class="row viz-row">
+        <h4>Visualizations</h4>
       </div><hr>
       
       <!-- ROW 2 -->
       <div class="row img-row">
-        <div class="col-lg-6 col-md-12">
-          <img class="img-fluid" src="../images/lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
+        <div class="col-lg-6 col-md-12 viz">
+          <img class="img-fluid" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
         </div>
-        <div class="col-lg-6 col-md-12">
-          <img class="img-fluid" src="../images/lat-humidity-scatter.png" alt="latitude-vs-humidity-scatter-plot">
+        <div class="col-lg-6 col-md-12 viz">
+          <img class="img-fluid" src="lat-humidity-scatter.png" alt="latitude-vs-humidity-scatter-plot">
         </div>
-      </div>
-
-      <!-- ROW 3 -->
-      <div class="row img-row">
-        <div class="col-lg-6 col-md-12">
-          <img class="img-fluid" src="../images/lat-cloudiness-scatter.png" alt="latitude-vs-cloudiness-scatter-plot">
+        <div class="col-lg-6 col-md-12 viz">
+          <img class="img-fluid" src="lat-cloudiness-scatter.png" alt="latitude-vs-cloudiness-scatter-plot">
         </div>
-        <div class="col-lg-6 col-md-12">
-          <img class="img-fluid" src="../images/lat-windspeed-scatter.png" alt="latitude-vs-windspeed-scatter-plot">
+        <div class="col-lg-6 col-md-12 viz">
+          <img class="img-fluid" src="lat-windspeed-scatter.png" alt="latitude-vs-windspeed-scatter-plot">
         </div>
       </div>
 
