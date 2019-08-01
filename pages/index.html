@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+  <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
@@ -15,7 +15,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
-  <a class="navbar-brand" href="index.html">Latitude</a>
+  <a class="navbar-brand" href="../pages/index.html">Latitude</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,17 +26,17 @@
           Plots
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="viz1.html">Max Temperature</a>
-          <a class="dropdown-item" href="viz2.html">Humidity</a>
-          <a class="dropdown-item" href="viz3.html">Cloudiness</a>
-          <a class="dropdown-item" href="viz4.html">Windspeed</a>
+          <a class="dropdown-item" href="../pages/viz1.html">Max Temperature</a>
+          <a class="dropdown-item" href="../pages/viz2.html">Humidity</a>
+          <a class="dropdown-item" href="../pages/viz3.html">Cloudiness</a>
+          <a class="dropdown-item" href="../pages/viz4.html">Windspeed</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="data.html">Data</a>
+        <a class="nav-link" href="../pages/data.html">Data</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="comparison.html">Comparison</a> 
+        <a class="nav-link" href="../pages/comparison.html">Comparison</a> 
       </li>
 
     </ul>
@@ -49,47 +49,51 @@
   <div class= "row">
     
     <!-- COLUMN 1 (takes up 7 of 12) -->
-    <div class="col-lg-6 offset-lg-1 summary">
+    <div class="col-lg-7 summary">
 
       <!-- ROW 1 -->
       <div class="row">
-        <h3 class="text-center">Summary: Latitude vs. X</h3>
-      </div>
+        <h3>Summary: Latitude vs. X</h3>
+      </div><hr>
 
       <!-- ROW 2 -->
       <div class="row">
-        <p>
-          <img src="#" alt="no image yet">Wrap text in paragraph here.
+        <p class="text-justify">
+          <img class="img-fluid" src="../images/lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">The purpose of this project was to analyze how weather changes as you get closer to the equator.
+          To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.<br>
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
+          temperature, humidity, cloudiness, and windpseed. This site provides the source data and visualizations created as part of the 
+          analysis, as well as explanations and descriptions of any trends and correlations witnessed.
         </p>
       </div>
 
     </div>
 
     <!--  COLUMN 2 (takes up 3 of 12) -->
-    <div class="col-lg-4 offset-lg-1 visualizations">
+    <div class="col-lg-4 visualizations">
 
       <!-- ROW 1 -->
       <div class="row">
-        <h3 class="text-center">Visualizations</h3>
-      </div>
+        <h3>Visualizations</h3>
+      </div><hr>
       
       <!-- ROW 2 -->
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="">visualization 1
+      <div class="row img-row">
+        <div class="col-lg-6 col-md-12">
+          <img class="img-fluid" src="../images/lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
         </div>
-        <div class="col-lg-6">
-          <img src="">visualization 2
+        <div class="col-lg-6 col-md-12">
+          <img class="img-fluid" src="../images/lat-humidity-scatter.png" alt="latitude-vs-humidity-scatter-plot">
         </div>
       </div>
 
       <!-- ROW 3 -->
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="">visualization 3
+      <div class="row img-row">
+        <div class="col-lg-6 col-md-12">
+          <img class="img-fluid" src="../images/lat-cloudiness-scatter.png" alt="latitude-vs-cloudiness-scatter-plot">
         </div>
-        <div class="col-lg-6">
-          <img src="">visualization 4
+        <div class="col-lg-6 col-md-12">
+          <img class="img-fluid" src="../images/lat-windspeed-scatter.png" alt="latitude-vs-windspeed-scatter-plot">
         </div>
       </div>
 
