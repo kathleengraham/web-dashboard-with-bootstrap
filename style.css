@@ -89,18 +89,21 @@ h3, h4 {
 .summary {
     background-color:white;
     margin-left: 45px;
-    margin-right: 20px;
     padding: 25px 50px 25px 50px;
 }
 
 .visualizations {
     background-color:white;
-    margin-left: 20px;
+    margin-left: 45px;
     padding: 25px 50px 25px 50px;
 }
 
 .single-post-content-wrapper{
     font-size: 16pt;
+}
+
+.image-wrapper {
+    margin-right: 20px;
 }
 
 .viz {
