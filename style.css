@@ -72,13 +72,6 @@ body {
         color: #B37CD1;
     }
 
-    .summary, .visualizations {
-        margin-left: 0px;
-    }
-}
-
-.container-fluid {
-    margin: auto;
 }
 
 h3, h4 {
@@ -89,16 +82,18 @@ h3, h4 {
 .summary {
     background-color:white;
     margin-left: 45px;
+    margin-bottom: 45px;
     padding: 25px 50px 25px 50px;
 }
 
 .visualizations {
     background-color:white;
     margin-left: 45px;
+    margin-bottom: 100px;
     padding: 25px 50px 25px 50px;
 }
 
-.single-post-content-wrapper{
+p {
     font-size: 16pt;
 }
 
@@ -108,4 +103,18 @@ h3, h4 {
 
 .viz {
     margin: 35px -15px 0px 0px;
+}
+
+.img-links:hover, .img-links:active, .img-links:focus {
+    border: 3px dashed #B37CD1;
+}
+
+#viz {
+    border: 3px solid #B37CD1;
+}
+
+#main-image {
+    max-width: 600px;
+    height: 400px;
+    margin-bottom: 25px;
 }
