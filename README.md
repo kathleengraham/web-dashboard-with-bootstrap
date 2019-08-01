@@ -1,4 +1,3 @@
-# Weather Visualization Dashboard
+# Open Weather Map API Dashboard with Bootstrap
 
-## Current files are test files
-
+#### Check out the web dashboard [here](https://kathleengraham.github.io/web-dashboard-with-bootstrap/).
