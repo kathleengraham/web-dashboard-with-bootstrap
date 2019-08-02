@@ -43,8 +43,56 @@
   </div>
 </nav>
 
-<div>
-  <h3> This is my test comparison page.</h3>
+<div class="container-fluid">
+
+  <!-- One big row -->
+  <div class= "row">
+    
+    <!-- COLUMN 1 (takes up 12 of 12) -->
+    <div class="col comparison">
+
+      <!-- ROW 1 -->
+      <div class="row">
+        <div class="col">
+          <h3>Comparison: Latitude vs. X</h3>
+        </div>
+      </div><hr>
+
+      <!-- ROW 2 -->
+      <div class="row">
+        <div class="col">
+          <p>Click any plot to get an in-depth analysis.</p>
+        </div>
+      </div>
+
+      <!-- ROW 3 -->
+      <div class="row comparison-row">
+        <div class="col-lg-6 plot">
+          <h5>vs. Max Temperature</h5>
+          <img class="img-fluid " src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
+        </div>
+        <div class="col-lg-6 plot">
+          <h5>vs. Humidity</h5>
+          <img class="img-fluid " src="lat-humidity-scatter.png" alt="latitude-vs-humidity-scatter-plot">
+        </div>
+      </div>
+
+      <!-- ROW 4 -->
+      <div class="row comparison-row">
+        <div class="col-lg-6 plot">
+          <h5>vs. Cloudiness</h5>
+          <img class="img-fluid " src="lat-cloudiness-scatter.png" alt="latitude-vs-cloudiness-scatter-plot">
+        </div>
+        <div class="col-lg-6 plot">
+          <h5>vs. Wind Speed</h5>
+          <img class="img-fluid " src="lat-windspeed-scatter.png" alt="latitude-vs-windspeed-scatter-plot">
+      </div>
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
 
 </body>

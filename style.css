@@ -58,7 +58,7 @@ body {
     outline: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .navbar-custom {
         background-color: #B37CD1;
     }
@@ -74,9 +74,13 @@ body {
 
 }
 
-h3, h4 {
+h3, h4 , h5 {
     color: #B37CD1;
     font-weight: bold;
+}
+
+h5 {
+    margin-left: 80px;
 }
 
 .summary {
@@ -116,5 +120,51 @@ p {
 #main-image {
     max-width: 500px;
     height: 300px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+.data {
+    background-color:white;
+    margin: 0px 50px 0px 45px;
+    padding: 25px 50px 25px 50px;
+}
+
+.comparison {
+    background-color:white;
+    margin: 0px 100px 0px 100px;
+    padding: 25px 50px 25px 50px;
+}
+
+.comparison-row {
+    margin: 0px 0px 0px 100px;
+}
+
+.plot {
+    padding: 15px;
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
 }
