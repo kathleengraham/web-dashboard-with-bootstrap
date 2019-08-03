@@ -1,8 +1,8 @@
-body {
-    background-color:#F7F7F7;
-    margin-top: 100px;
-    font-family: 'Tajawal', sans-serif;
-}
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* NAVBAR */
 
 .navbar-custom {
     background-color: #B37CD1;
@@ -40,8 +40,10 @@ body {
     border-radius: 15px;
 }
 
-.navbar-custom .dropdown-menu, .navbar-custom .dropdown-menu:active,
-.navbar-custom .dropdown-item, .navbar-custom .dropdown-item:active,
+.navbar-custom .dropdown-menu,
+.navbar-custom .dropdown-menu:active,
+.navbar-custom .dropdown-item,
+.navbar-custom .dropdown-item:active,
 .navbar-custom .navbar-nav {
     border-radius: 15px;
 }
@@ -69,20 +71,36 @@ body {
     color: #B37CD1;
 }
 
-.summary, .visualizations, .data, .comparison {
+
+/* WITHIN BODY */
+
+body {
+    background-color:#F7F7F7;
+    margin-top: 100px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.summary,
+.visualizations,
+.data,
+.comparison {
     background-color:white;
 }
 
 p {
-    font-size: 14pt;
+    font-size: 10pt;
 }
 
-h3, h4 , h5 {
+h3,
+h4,
+h5 {
     color: #B37CD1;
     font-weight: bold;
 }
 
-.img-links:hover, .img-links:active, .img-links:focus {
+.img-links:hover,
+.img-links:active,
+.img-links:focus {
     border: 3px dashed #B37CD1;
 }
 
@@ -90,16 +108,23 @@ h3, h4 , h5 {
     border: 3px solid #B37CD1;
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query since this is the default in Bootstrap */
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+    p {
+        font-size: 12pt;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    p {
+        font-size: 14pt;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
     .navbar-custom {
         background-color: white;
     }
@@ -169,26 +194,5 @@ h3, h4 , h5 {
 
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    
-}
-
-/* @media (max-width: 768px) {
-    .navbar-custom {
-        background-color: #B37CD1;
-    }
-
-    .navbar-custom .navbar-nav {
-        background-color:white;
-    }
-
-    .navbar-custom .navbar-brand {
-        background-color:white;
-        color: #B37CD1;
-    }
-
-} */
+@media (min-width: 1200px) {}
