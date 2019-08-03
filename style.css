@@ -5,13 +5,13 @@ body {
 }
 
 .navbar-custom {
-    background-color: white;
+    background-color: #B37CD1;
 }
 
 .navbar-custom .navbar-brand {
     font-size: 20pt;
     font-weight: bold;
-    background-color:#B37CD1;
+    background-color:white;
     border-radius: 15px;
     color: white;
     padding: 10px 35px 10px 35px;
@@ -40,6 +40,7 @@ body {
 .navbar-custom .navbar-nav {
     border-radius: 15px;
 }
+
 .navbar-custom .navbar-nav .nav-item {
     font-size: 14pt;
     margin-left: 25px;
@@ -56,6 +57,10 @@ body {
 .navbar-custom .navbar-toggler:active {
     background-color: #F7F7F7;
     outline: none;
+}
+
+a:active {
+    background-color: #F7F7F7;
 }
 
 @media (max-width: 768px) {
