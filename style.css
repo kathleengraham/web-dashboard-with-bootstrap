@@ -28,6 +28,7 @@ body {
 .navbar-custom .dropdown:active {
     background-color: #F7F7F7;
 }
+
 .navbar-custom .nav-link:active {
     border-radius: 15px;
 }
@@ -72,17 +73,13 @@ body {
     background-color:white;
 }
 
+p {
+    font-size: 14pt;
+}
+
 h3, h4 , h5 {
     color: #B37CD1;
     font-weight: bold;
-}
-
-h5 {
-    margin-left: 80px;
-}
-
-p {
-    font-size: 16pt;
 }
 
 .img-links:hover, .img-links:active, .img-links:focus {
@@ -91,12 +88,6 @@ p {
 
 #viz {
     border: 3px solid #B37CD1;
-}
-
-#main-image {
-    max-width: 500px;
-    height: 300px;
-    margin-bottom: 15px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -109,13 +100,27 @@ p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .navbar-custom {
+        background-color: white;
+    }
 
-}
+    .navbar-custom .navbar-brand {
+        background-color:#B37CD1;
+        border-radius: 15px;
+        color: white;
+    }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+    .navbar-custom .navbar-brand:hover {
+        color: #B37CD1;
+        background-color: #F7F7F7;
+    }
+
     h5 {
         margin-left: 80px;
+    }
+
+    p {
+        font-size: 16pt;
     }
     
     .summary {
@@ -163,6 +168,9 @@ p {
     }
 
 }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
