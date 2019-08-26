@@ -1,8 +1,4 @@
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query since this is the default in Bootstrap */
-
-
-/* NAVBAR */
+/*********************** nav ************************/
 
 .navbar-custom {
     background-color: #B37CD1;
@@ -29,6 +25,12 @@
     background-color: #F7F7F7;
 }
 
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #B37CD1;
+}
 .navbar-custom .nav-link:active {
     border-radius: 15px;
 }
@@ -54,7 +56,7 @@
     padding: 0px 10px 0px 10px;
 }
 
-.navbar-custom .nav-item:hover {
+.navbar-custom .navbar-nav .nav-item:hover {
     background-color: #F7F7F7;
     border-radius: 15px;
 }
@@ -72,7 +74,24 @@
 }
 
 
-/* WITHIN BODY */
+/*********************** images ************************/
+#index-img {
+    width: 50%;
+    height: 50%;
+}
+
+.img-links:hover,
+.img-links:active,
+.img-links:focus {
+    border: 3px dashed #B37CD1;
+}
+
+#active-img {
+    border: 3px solid #B37CD1;
+}
+
+
+/******************** body and text *********************/
 
 body {
     background-color:#F7F7F7;
@@ -87,8 +106,12 @@ body {
     background-color:white;
 }
 
+.visualizations {
+    margin-bottom: 100px;
+}
+
 p {
-    font-size: 10pt;
+    font-size: 14pt;
 }
 
 h3,
@@ -98,32 +121,44 @@ h5 {
     font-weight: bold;
 }
 
-.img-links:hover,
-.img-links:active,
-.img-links:focus {
-    border: 3px dashed #B37CD1;
+
+/*********************** footer ************************/
+footer {
+    background-color: #B37CD1;
+    color: white; 
+    min-height: 45px; 
+    font-size: 9pt; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px;
+}
+footer a, footer a:hover, footer a:active, footer a:focus {
+    color: white;
 }
 
-#viz {
-    border: 3px solid #B37CD1;
-}
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     p {
         font-size: 12pt;
     }
-}
+} */
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     p {
         font-size: 14pt;
     }
-}
+} */
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
 
     .navbar-custom {
         background-color: white;
@@ -192,7 +227,7 @@ h5 {
         padding: 15px;
     }
 
-}
+} */
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+/* @media (min-width: 1200px) {} */
