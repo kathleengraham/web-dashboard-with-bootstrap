@@ -14,8 +14,6 @@
 
 <body>
 
-<!-- nav -->
-<div class="navigation">
 <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
   <a class="navbar-brand" href="index.html">Latitude</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,78 +42,81 @@
     </ul>
   </div>
 </nav>
-</div>
 
-
-<!-- main content -->
 <div class="container-fluid">
-  <div class="row">
-    
-    <!-- COLUMN 1 -->
-    <div class="col-lg-7 p-5 ml-5 mb-5 mr-4 summary">
-      <div class="row">
-        <div class="col">
-          <h3>Summary: Latitude vs. X</h3><hr>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img class="img-fluid float-left pr-3 pb-1" id="index-img" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
-            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
-              To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a data set on over 500 cities.
-              <br><br>
-              After assembling the data set, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
-              temperature, humidity, cloudiness, and wind speed. This site provides the source data and visualizations created as part of the 
-              analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end of column 1 -->
 
-    <!--  COLUMN 2 -->
-    <div class="col-lg-4 pt-5 pl-5 pr-5 visualizations">
+  <!-- One big row with two columns inside container-->
+  <div class= "row">
+    
+    <!-- COLUMN 1 (takes up 7 of 12) -->
+    <div class="col-xl-7 mb-5 summary">
+
+      <!-- ROW 1 -->
       <div class="row">
         <div class="col">
-          <h4>Visualizations</h4><hr>
+          <h3>Summary: Latitude vs. X</h3>
+        </div>
+      </div><hr>
+
+      <!-- ROW 2 -->
+      <div class="row">
+        <div class="col">
+          <p class="single-post-content-wrapper">
+            <img class="img-fluid image-wrapper float-left" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
+            The purpose of this project was to analyze how weather changes as you get closer to the equator.
+            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a data set on over 500 cities.
+            <br><br>
+            After assembling the data set, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
+            temperature, humidity, cloudiness, and wind speed. This site provides the source data and visualizations created as part of the 
+            analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+          </p>
         </div>
       </div>
-        <div class="row pt-5 img-row">
-          <div class="col-lg-6 col-md-3 viz">
-            <a href="viz1.html">
-              <img class="img-fluid img-links" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
-            </a>
-          </div>
-          <div class="col-lg-6 col-md-3 viz">
-              <a href="viz2.html">
-                <img class="img-fluid img-links" src="lat-humidity-scatter.png" alt="latitude-vs-humidity-scatter-plot">
-              </a>
-          </div>
-        </div>
-        <div class="row pt-5 img-row">
-          <div class="col-lg-6 col-md-3 viz">
-              <a href="viz3.html">
-                <img class="img-fluid img-links" src="lat-cloudiness-scatter.png" alt="latitude-vs-cloudiness-scatter-plot">
-              </a>
-          </div>
-          <div class="col-lg-6 col-md-3 viz">
-              <a href="viz4.html">
-                <img class="img-fluid img-links" src="lat-windspeed-scatter.png" alt="latitude-vs-windspeed-scatter-plot">
-              </a>
-          </div>
-        </div>
-        
-      </div>
+
     </div>
-    <!-- end of column 2 -->
-  
+
+    <!--  COLUMN 2 (takes up 4 of 12) -->
+    <div class="col-xl-4 visualizations">
+
+      <!-- ROW 1 -->
+      <div class="row viz-row">
+        <div class="col">
+          <h4>Visualizations</h4>
+        </div>
+      </div><hr>
+      
+      <!-- ROW 2 -->
+      <div class="row img-row">
+        <div class="col-xl-6 col-md-3 viz">
+          <a href="viz1.html">
+            <img class="img-fluid img-links" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
+          </a>
+        </div>
+        <div class="col-xl-6 col-md-3  viz">
+            <a href="viz2.html">
+              <img class="img-fluid img-links" src="lat-humidity-scatter.png" alt="latitude-vs-humidity-scatter-plot">
+            </a>
+        </div>
+        <div class="col-xl-6 col-md-3  viz">
+            <a href="viz3.html">
+              <img class="img-fluid img-links" src="lat-cloudiness-scatter.png" alt="latitude-vs-cloudiness-scatter-plot">
+            </a>
+        </div>
+        <div class="col-xl-6 col-md-3  viz">
+            <a href="viz4.html">
+              <img class="img-fluid img-links" src="lat-windspeed-scatter.png" alt="latitude-vs-windspeed-scatter-plot">
+            </a>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </div>
-<!-- end of main content -->
 
 <!-- footer -->
 <footer>
-  <div class="footer">Made with &#10084; and <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="blank">Bootstrap</a> by Kathleen Graham 2019</div>
+  <div class="footer">Made with &#10084; and <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="blank">Bootstrap</a>&nbsp &nbsp | &nbsp &nbspKathleen Graham 2019</div>
 </footer>
 
 <!-- Bootstrap requirements -->
