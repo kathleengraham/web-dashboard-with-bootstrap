@@ -26,10 +26,10 @@
           Plots
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="viz1.html">Max Temperature</a>
-          <a class="dropdown-item" href="viz2.html">Humidity</a>
-          <a class="dropdown-item" href="viz3.html">Cloudiness</a>
-          <a class="dropdown-item" href="viz4.html">Wind Speed</a>
+          <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="windspeed.html">Windspeed</a>
         </div>
       </li>
       <li class="nav-item">
@@ -49,7 +49,7 @@
   <div class= "row">
     
     <!-- COLUMN 1 (takes up 7 of 12) -->
-    <div class="col-xl-7 mb-5 summary">
+    <div class="col-xl-7 summary">
 
       <!-- ROW 1 -->
       <div class="row">
@@ -62,11 +62,11 @@
       <div class="row">
         <div class="col">
           <p class="single-post-content-wrapper">
-            <img class="img-fluid image-wrapper float-left" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
-            The purpose of <a id='project-link' href="https://github.com/kathleengraham/weather-analysis-with-openweathermap-api" target="blank">this project</a> was to analyze how weather changes as you get closer to the equator.
+            <img id='home-image' class="img-fluid rounded mx-auto d-block" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The purpose of <a id='project-link' href="https://github.com/kathleengraham/weather-analysis-with-openweathermap-api" target="blank">this project</a> was to analyze how weather changes as you get closer to the equator.
             To accomplish this analysis, I first pulled data from the OpenWeatherMap API to assemble a data set on over 500 cities. I chose to include well over 500 cities to account for some cities being repeated due to finding the closest city to random latitude and longitude coordinates.
-            <br><br>
-            After assembling the data set, I used Matplotlib to plot various aspects of the weather vs. latitude. Factors I looked at included:
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After assembling the data set, I used Matplotlib to plot various aspects of the weather vs. latitude. Factors I looked at included:
             temperature, humidity, cloudiness, and wind speed. This responsive dashboard provides the source data and visualizations created as part of the 
             analysis, as well as explanations and descriptions of any trends and correlations witnessed.
           </p>
@@ -75,37 +75,37 @@
 
     </div>
 
-    <!--  COLUMN 2 (takes up 4 of 12) -->
-    <div class="col-xl-4 visualizations">
+    <!--  COLUMN 2 (takes up 5 of 12) -->
+    <div class="col-xl-5 visualizations mb-2">
 
       <!-- ROW 1 -->
       <div class="row viz-row">
         <div class="col">
-          <h4>Visualizations</h4>
+          <h3>Visualizations</h3>
         </div>
       </div><hr>
       
       <!-- ROW 2 -->
-      <div class="row img-row">
-        <div class="col-xl-6 col-md-3 viz">
-          <a href="viz1.html">
-            <img class="img-fluid img-links" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
+      <div class="row img-row mx-1">
+        <div class="col-xl-6 col-md-3 px-1 viz">
+          <a href="maxtemp.html">
+            <img class="img-fluid img-links rounded mx-auto d-block px-1 p-md-2" src="lat-temp-scatter.png" alt="latitude-vs-temperature-scatter-plot">
           </a>
         </div>
-        <div class="col-xl-6 col-md-3  viz">
-            <a href="viz2.html">
-              <img class="img-fluid img-links" src="lat-humidity-scatter.png" alt="latitude-vs-humidity-scatter-plot">
-            </a>
+        <div class="col-xl-6 col-md-3 px-1 viz">
+          <a href="humidity.html">
+            <img class="img-fluid img-links rounded mx-auto d-block px-1 p-md-2" src="lat-humidity-scatter.png" alt="latitude-vs-humidity-scatter-plot">
+          </a>
         </div>
-        <div class="col-xl-6 col-md-3  viz">
-            <a href="viz3.html">
-              <img class="img-fluid img-links" src="lat-cloudiness-scatter.png" alt="latitude-vs-cloudiness-scatter-plot">
-            </a>
+        <div class="col-xl-6 col-md-3 px-1 viz">
+          <a href="cloudiness.html">
+            <img class="img-fluid img-links rounded mx-auto d-block px-1 p-md-2" src="lat-cloudiness-scatter.png" alt="latitude-vs-cloudiness-scatter-plot">
+          </a>
         </div>
-        <div class="col-xl-6 col-md-3  viz">
-            <a href="viz4.html">
-              <img class="img-fluid img-links" src="lat-windspeed-scatter.png" alt="latitude-vs-windspeed-scatter-plot">
-            </a>
+        <div class="col-xl-6 col-md-3 px-1 viz">
+          <a href="windspeed.html">
+            <img class="img-fluid img-links rounded mx-auto d-block px-1 p-md-2" src="lat-windspeed-scatter.png" alt="latitude-vs-windspeed-scatter-plot">
+          </a>
         </div>
       </div>
 
@@ -116,7 +116,7 @@
 
 <!-- footer -->
 <footer>
-  <div class="footer">Made with &#10084; and <a id='boot-link' href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="blank">Bootstrap</a>&nbsp &nbsp | &nbsp &nbspKathleen Graham 2019 &nbsp <a href="https://github.com/kathleengraham/weather-analysis-with-openweathermap-api" target="blank"><img id='gh-icon' src="icons8-github-64.png"></a></div>
+  <div class="footer">Made with &#10084; and <a id='boot-link' href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="blank">Bootstrap</a>&nbsp;&nbsp;|&nbsp;&nbsp;Kathleen Graham 2019&nbsp;&nbsp;<a href="https://github.com/kathleengraham/weather-analysis-with-openweathermap-api" target="blank"><img id='gh-icon' src="icons8-github-64.png"></a></div>
 </footer>
 
 <!-- Bootstrap requirements -->
