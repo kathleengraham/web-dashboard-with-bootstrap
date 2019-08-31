@@ -126,6 +126,12 @@ h5 {
     border: 3px solid #B37CD1;
 }
 
+.data-table {
+    height:400px;
+    overflow-y: scroll;
+    width: 100%
+}
+
 /*********************** FOOTER ************************/
 footer {
     background-color: #B37CD1;
