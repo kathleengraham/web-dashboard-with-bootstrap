@@ -3,7 +3,6 @@
 
 
 /*********************** NAVBAR ************************/
-
 .navbar-custom {
     background-color: #B37CD1;
 }
@@ -13,6 +12,7 @@
     font-weight: bold;
     background-color:white;
     border-radius: 15px;
+    border: none;
     color: #B37CD1;
     padding: 10px 35px 10px 35px;
     margin: -10px 0px -8px 25px;
@@ -20,7 +20,7 @@
 
 .navbar-custom .navbar-brand:hover {
     color: #B37CD1;
-    background-color: #F7F7F7;
+    text-decoration: underline;
 }
 
 .navbar-custom .dropdown:focus,
@@ -79,9 +79,14 @@
 /********************* WITHIN BODY *********************/
 
 body {
-    background-color:#F7F7F7;
-    margin-top: 100px;
+    background-color: white;
     font-family: 'Tajawal', sans-serif;
+    font-size: 14pt;
+}
+
+.container-fluid {
+    margin-top: 60px;
+    margin-bottom: 5px;
 }
 
 .summary,
@@ -89,23 +94,7 @@ body {
 .data,
 .comparison {
     background-color:white;
-    /* margin-left: 45px;
-    padding: 25px 50px 25px 50px; */
-}
-
-.comparison {
-    /* margin-right: 45px; */
-}
-.summary {
-    /* margin-bottom: 45px; */
-}
-
-.visualizations {
-    /* margin-bottom: 100px; */
-}
-
-p {
-    font-size: 10pt;
+    padding: 25px 25px 25px 25px;
 }
 
 #project-link {
@@ -113,11 +102,18 @@ p {
     font-weight: bold;
 }
 
-h3,
-h4,
-h5 {
+h3, h5 {
     color: #B37CD1;
     font-weight: bold;
+}
+
+h5 {
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.img-links {
+    margin: 5px;
 }
 
 .img-links:hover,
@@ -144,80 +140,37 @@ footer {
     width: 100%;
  
 }
-#boot-link, #boot-link:hover, #boot-link:active, #boot-link:focus {
-    color: white;
+
+#boot-link:link,
+#boot-link:visited,
+#boot-link:hover,
+#boot-link:active {
+    color: white !important;
 }
 
 #gh-icon {
     width: 30px;
     height: 30px;
     background-size: 100%;
-
 }
 
 /*********************** RESPONSIVE FEATURES ************************/
+
+
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    p {
-        font-size: 12pt;
-    }
-}
+/* @media (min-width: 576px) {} */
+
+
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .summary,
-    .visualizations,
-    .data,
-    .comparison {
-        background-color:white;
-        margin-left: 45px;
-        padding: 25px 50px 25px 50px;
-    }
+/* @media (min-width: 768px) {}
 
-    p {
-        font-size: 14pt;
-    }
-}
+
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {}
 
-    h5 {
-        margin-left: 80px;
-    }
 
-    p {
-        font-size: 16pt;
-    }
-    
-    .image-wrapper {
-        margin-right: 20px;
-    }
-    
-    .viz {
-        margin: 35px -15px 0px 0px;
-    }
-
-    #main-image {
-        max-width: 500px;
-        height: 300px;
-        margin-bottom: 15px;
-    }
-    
-    .comparison {
-        margin: 0px 100px 0px 100px;
-        padding: 25px 50px 25px 50px;
-    }
-    
-    .comparison-row {
-        margin: 0px 0px 0px 100px;
-    }
-    
-    .plot {
-        padding: 15px;
-    }
-
-}
 
 /* Extra large devices (large desktops, 1200px and up) */
 /* @media (min-width: 1200px) {} */
