@@ -97,7 +97,7 @@ body {
     padding: 25px 25px 25px 25px;
 }
 
-#project-link {
+.p-link {
     color: #B37CD1;
     font-weight: bold;
 }
