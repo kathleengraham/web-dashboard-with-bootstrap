@@ -89,23 +89,28 @@ body {
 .data,
 .comparison {
     background-color:white;
-    margin-left: 45px;
-    padding: 25px 50px 25px 50px;
+    /* margin-left: 45px;
+    padding: 25px 50px 25px 50px; */
 }
 
 .comparison {
-    margin-right: 45px;
+    /* margin-right: 45px; */
 }
 .summary {
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
 }
 
 .visualizations {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 p {
     font-size: 10pt;
+}
+
+#project-link {
+    color: #B37CD1;
+    font-weight: bold;
 }
 
 h3,
@@ -129,22 +134,37 @@ h5 {
 footer {
     background-color: #B37CD1;
     color: white; 
-    min-height: 45px; 
     font-size: 9pt; 
     text-align: center; 
+    vertical-align: middle;
+    line-height: 45px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding-top: 15px;
+ 
 }
-footer a, footer a:hover, footer a:active, footer a:focus {
+#boot-link, #boot-link:hover, #boot-link:active, #boot-link:focus {
     color: white;
 }
 
+#gh-icon {
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
 
+}
+
+/*********************** RESPONSIVE FEATURES ************************/
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    p {
+        font-size: 12pt;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
     .summary,
     .visualizations,
     .data,
@@ -154,13 +174,6 @@ footer a, footer a:hover, footer a:active, footer a:focus {
         padding: 25px 50px 25px 50px;
     }
 
-    p {
-        font-size: 12pt;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
     p {
         font-size: 14pt;
     }
